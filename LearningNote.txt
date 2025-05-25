@@ -1,0 +1,24 @@
+# Git与代码版本管理学习笔记
+
+## 一、学习资料来源
+1. [Git官方文档](https://git-scm.com/doc)
+2. [GitHub官方教程](https://docs.github.com/en/get-started)
+3. 《Pro Git》电子书
+
+## 二、实践流程
+1. 本地Git环境安装与配置
+2. 创建本地仓库与远程仓库
+3. 完成三次代码提交并推送到远程仓库
+   - 第一次提交：添加基础功能
+   - 第二次提交：修复逻辑问题
+   - 第三次提交：优化代码结构
+
+## 三、遇到的困难及解决方法
+1. **问题**：git push时提示"remote: Permission to ... denied"
+   - **解决**：检查GitHub账户的SSH密钥配置，重新生成并添加密钥。
+
+2. **问题**：提交历史显示乱码
+   - **解决**：设置git的字符编码为utf-8：
+     ```bash
+     git config --global i18n.commitencoding utf-8
+     git config --global i18n.logoutputencoding utf-8
